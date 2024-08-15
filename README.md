@@ -29,7 +29,7 @@ cfg="configs/bevnext/bevnext-stage1.py"
 work_dir="work_dirs/bevnext-stage1"
 bash tools/dist_train.sh $cfg 8 --work-dir $work_dir --seed 0
 ```
-+ Training-Stage2 (Single Node): This stage loads the weights from the previous stage and uses long-term temporal information for training. Previous BEV Encoder is discarded.
++ Training-Stage2 (Single Node): This stage loads the weights from the previous stage and uses long-term temporal information for training. The BEV Encoder and Detection Heads from the previous stage are discarded.
 ```
 # remember to fill in the checkpoint path from the previous stage in bevnext-stage2.py
 cfg="configs/bevnext/bevnext-stage2.py"
