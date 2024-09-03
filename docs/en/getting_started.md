@@ -45,9 +45,9 @@ Otherwise, you should refer to the step-by-step installation instructions in the
 
 ```shell
 pip install openmim
-mim install mmcv-full
-mim install mmdet
-mim install mmsegmentation
+mim install mmcv-full==1.6.2
+mim install mmdet==2.28.2
+mim install mmsegmentation==0.30.0
 git clone https://github.com/open-mmlab/mmdetection3d.git
 cd mmdetection3d
 pip install -e .
